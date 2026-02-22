@@ -1,0 +1,41 @@
+@use "./mixins" as m;
+.main-section {
+  @include m.background(url("../images/bg.jpg"));
+  object-fit: cover;
+  padding-top: 460px;
+  padding-bottom: 70px;
+}
+.section-box {
+  @include m.grid-box(0px);
+  color: #fff;
+}
+.section-box_text {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+}
+.section-box_name {
+  font-weight: 700;
+  font-size: 60px;
+  margin: 0;
+}
+.section-box_name__span {
+  color: #ed8929;
+  font-weight: 700;
+  font-size: 60px;
+}
+
+@media only screen and (min-width: 834px) {
+  .section-box {
+    padding-left: 30px;
+  }
+  .section-box_text {
+    font-size: 24px;
+  }
+  .section-box_name {
+    font-size: 120px;
+  }
+  .section-box_name__span {
+    font-size: 120px;
+  }
+}

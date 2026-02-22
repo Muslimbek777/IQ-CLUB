@@ -1,0 +1,169 @@
+@use "./mixins" as m;
+.yetti-section {
+  padding-block: 50px;
+}
+.yetti-box {
+  @include m.grid-box(40px);
+}
+.yetti-card_img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.yetti-card {
+  @include m.grid-box(0px);
+}
+.yetti-card_str {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.yetti-card_text {
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0;
+  @include m.flex-box-2(start, 10px);
+  margin-bottom: 20px;
+}
+.yetti-card_text__str {
+  font-weight: 700;
+  font-size: 18px;
+}
+.yetti-card_btn {
+  border: none;
+  width: 235px;
+  height: 40px;
+  background-color: #efa35a;
+  padding: 9px 65px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0 auto;
+  cursor: pointer;
+  &:hover {
+    background-color: #fff;
+    color: #efa35a;
+    border: 1px solid #efa35a;
+  }
+}
+.wrappers {
+  @include m.grid-box(0px);
+  text-align: center;
+  @include m.background(url("../images/house.jpg"));
+  padding: 40px 20px;
+  margin-top: 40px;
+  width: 100%;
+}
+.wrappers-name {
+  font-weight: 700;
+  font-size: 23px;
+  text-transform: uppercase;
+  color: #fff;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #fff;
+  margin: 0;
+}
+.wrappers-name_span {
+  color: #efa359;
+}
+.wrappers-text {
+  margin: 0;
+  color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+  margin-block: 20px;
+}
+.wrappers-text_strs {
+  color: #efa359;
+  font-weight: 700;
+  font-size: 14px;
+}
+.wrappers-btn {
+  border: none;
+  background-color: #efa359;
+  color: #fff;
+  width: 300px;
+  padding: 15px 45px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  &:hover {
+    background-color: #fff;
+    color: #efa359;
+    border: 1px solid #efa359;
+  }
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.wrappers-btns {
+  border: none;
+  width: 300px;
+  padding: 15px 45px;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0 auto;
+  border: 1px solid #efa359;
+  background-color: #c3c3c3;
+}
+.spans {
+  font-style: normal;
+  font-weight: 500;
+}
+.names {
+  color: #000;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 40px;
+}
+@media only screen and (min-width: 834px) {
+  .yetti-card_box {
+    @include m.flex-box;
+  }
+  .yetti-card_btn {
+    margin: 0;
+  }
+  .yetti-card_text {
+    margin: 0;
+  }
+  .wrappers-name {
+    font-size: 30px;
+  }
+  .wrappers-text {
+    font-size: 24px;
+  }
+  .wrappers-text_strs {
+    font-size: 24px;
+  }
+  .wrappers {
+    width: 794px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  .wrapperss {
+    @include m.flex-boxs(15px);
+  }
+  .wrappers-btn {
+    margin: 0;
+  }
+  .wrappers-btns {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .yetti-boxs {
+    @include m.flex-boxs(10px);
+    margin-bottom: 30px;
+  }
+  .yetti-box {
+    @include m.flex-box;
+  }
+  .names {
+    margin: 0;
+  }
+  .wrappers {
+    width: 100%;
+    height: 400px;
+  }
+}

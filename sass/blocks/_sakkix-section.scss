@@ -1,0 +1,172 @@
+@use "./mixins" as m;
+.sakkiz-section {
+  padding-bottom: 50px;
+}
+.sakkiz-box {
+  @include m.grid-box(40px);
+}
+.sakkix-box_name {
+  font-weight: 500;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.sakkiz-box_name__span {
+  color: #efa35a;
+  font-style: italic;
+}
+.sakkiz-card_img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+.sakkiz-card_name {
+  font-weight: 500;
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.sakkiz-card_text {
+  font-weight: 400;
+  font-size: 20px;
+  @include m.flex-box-2(start, 10px);
+  margin: 0;
+  margin-bottom: 10px;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    @include m.background(url("../images/location.svg"));
+  }
+}
+.sakkiz-card_texts {
+  color: #efa35a;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+}
+.sakkiz-box_img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+.sakkiz-box_name {
+  display: none;
+}
+.sakkiz {
+  display: none;
+}
+@media only screen and (min-width: 834px) {
+  .sakkix-box_name {
+    text-align: start;
+    font-size: 44px;
+    @include m.flex-box-2(start, 10px);
+  }
+  .sakkiz-card_box {
+    @include m.flex-boxs(20px);
+  }
+  .sakkiz-card_name {
+    margin: 0;
+  }
+  .sakkiz-card_text {
+    margin: 0;
+  }
+  .sakkiz-box_name__span {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 44px;
+  }
+  .sakkiz {
+    display: block;
+    width: 360px;
+    background-color: #fff;
+    padding: 30px 25px;
+    text-align: center;
+    @include m.grid-box(0px);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .sakkiz-wrap {
+    position: relative;
+  }
+  .sakkiz-name {
+    font-weight: 500;
+    font-size: 28px;
+    margin: 0;
+  }
+  .sakkiz-text {
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0;
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
+  .sakkiz-texts {
+    @include m.flex-boxs(20px);
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 24px;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      @include m.background(url("../images/location.svg"));
+    }
+  }
+  .sakkiz-textss {
+    @include m.flex-boxs(20px);
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 24px;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      @include m.background(url("../images/clock.svg"));
+    }
+  }
+  .sakkiz-textsss {
+    @include m.flex-boxs(20px);
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 40px;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      @include m.background(url("../images/phone.svg"));
+    }
+  }
+  .sakkiz-btn {
+    border: none;
+    background-color: #efa359;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 30px;
+    width: 100%;
+    height: 50px;
+    &:hover {
+      background-color: #fff;
+      color: #efa359;
+      border: 1px solid #efa359;
+    }
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .sakkiz-box {
+    @include m.flex-box;
+    margin-bottom: 30px;
+  }
+}

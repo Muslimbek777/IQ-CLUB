@@ -1,0 +1,58 @@
+@use "./mixins" as m;
+.header-box {
+  padding-block: 20px;
+  background-color: #ffffffe5;
+  border-bottom: 1px solid #e3e3e3;
+  position: relative;
+}
+.navbar-ul {
+  @include m.ul-box;
+  @include m.grid-box(0px);
+}
+.navbar-ul_li__site {
+  text-decoration-line: none;
+  color: #000;
+  font-weight: 400;
+  font-size: 16px;
+}
+.header-boxs {
+  @include m.flex-box;
+  padding-left: 20px;
+}
+.wrapper {
+  @include m.flex-boxs(15px);
+}
+.wrapper-btn {
+  border: none;
+  background-color: transparent;
+  @include m.background(url("../images/number.svg"));
+  width: 26px;
+  height: 26px;
+}
+.wrapper-btn:nth-child(2) {
+  @include m.background(url("../images/hamburg-btn.png"));
+  width: 28px;
+  height: 30px;
+}
+@media only screen and (min-width: 834px) {
+  .navbar {
+    position: static;
+    z-index: 0;
+    transform: translateY(0px);
+  }
+  .navbar-ul {
+    @include m.flex-boxs(24px);
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .header-box {
+    background-color: #ffffffb2;
+  }
+  .navbar-ul {
+    @include m.flex-boxs(30px);
+  }
+  .navbar-ul_li__site {
+    font-weight: 500;
+    font-size: 20px;
+  }
+}

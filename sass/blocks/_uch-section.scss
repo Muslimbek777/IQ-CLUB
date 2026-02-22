@@ -1,0 +1,167 @@
+@use "./mixins" as m;
+.uch-name_span {
+  font-weight: 400;
+  font-style: Italic;
+  font-size: 30px;
+  color: #efa359;
+}
+.uch-name {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.uch-box {
+  @include m.background(url("../images/bg 2.jpg"));
+  padding-top: 180px;
+  padding-bottom: 250px;
+  @include m.grid-box(20px);
+  color: #fff;
+  text-align: center;
+  position: relative;
+  object-fit: cover;
+}
+.uch-box_img {
+  margin: 0 auto;
+}
+.uch-box_text {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+}
+.uch-box_span {
+  background: linear-gradient(180deg, #ff7e00 0%, #efa35a 100%);
+  padding: 5px;
+  border-radius: 50%;
+  width: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  position: absolute;
+  top: 140px;
+  right: 125px;
+}
+.uch-box_spans {
+  background: linear-gradient(180deg, #ff7e00 0%, #efa35a 100%);
+  padding: 5px;
+  border-radius: 50%;
+  width: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  position: absolute;
+  bottom: 100px;
+  left: 20px;
+}
+.uch-box_spanss {
+  background: linear-gradient(180deg, #ff7e00 0%, #efa35a 100%);
+  padding: 5px;
+  border-radius: 50%;
+  width: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  position: absolute;
+  right: -12px;
+  bottom: 205px;
+  display: none;
+}
+.uch-box_spansss {
+  background: linear-gradient(180deg, #ff7e00 0%, #efa35a 100%);
+  padding: 5px;
+  border-radius: 50%;
+  width: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  position: absolute;
+  right: -15px;
+  bottom: 115px;
+  display: none;
+}
+.uch-box_spanssss {
+  background: linear-gradient(180deg, #ff7e00 0%, #efa35a 100%);
+  padding: 5px;
+  border-radius: 50%;
+  width: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  position: absolute;
+}
+@media only screen and (min-width: 834px) {
+  .uch-box_span {
+    top: 120px;
+    right: 400px;
+    font-weight: 700;
+    font-size: 20px;
+    width: 33px;
+    height: 33px;
+    padding: 0;
+  }
+  .uch-box_spans {
+    width: 33px;
+    height: 33px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 20px;
+    bottom: 60px;
+    left: 285px;
+  }
+  .uch-box_spanss {
+    width: 33px;
+    height: 33px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 20px;
+    right: 245px;
+    bottom: 192px;
+    display: block;
+  }
+  .uch-box_spansss {
+    width: 33px;
+    height: 33px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 20px;
+    right: 200px;
+    bottom: 100px;
+    display: block;
+  }
+  .uch-box_spanssss {
+    width: 33px;
+    height: 33px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 20px;
+    left: 20px;
+    bottom: 250px;
+  }
+  .uch-name {
+    text-transform: uppercase;
+  }
+  .uch-box {
+    width: 794px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .uch-box {
+    width: 1240px;
+    margin: 0 auto;
+  }
+  .uch-box_span {
+    top: 85px;
+    right: 600px;
+  }
+  .uch-box_spans {
+    left: 365px;
+  }
+  .uch-box_spanss {
+    right: 400px;
+    bottom: 160px;
+  }
+  .uch-box_spansss {
+    right: 360px;
+    bottom: 45px;
+  }
+  .uch-box_spanssss {
+    left: 65px;
+    bottom: 320px;
+  }
+}

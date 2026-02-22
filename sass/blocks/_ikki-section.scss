@@ -1,0 +1,119 @@
+@use "./mixins" as m;
+.ikki-section {
+  padding-block: 50px;
+}
+.ikki-box {
+  @include m.grid-box(0px);
+}
+.ikki-box_name {
+  color: #efa359;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.ikki-box_name__span {
+  color: #efa359;
+  font-weight: 400;
+  font-style: Italic;
+  font-size: 30px;
+}
+.ikki-box_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+.ikki-card {
+  border: 1px solid #efa359;
+  position: relative;
+  height: 400px;
+  overflow-x: scroll;
+}
+.ikki-card_img {
+  position: absolute;
+}
+.ikki-card_img:nth-child(1) {
+  top: 50px;
+  left: -21px;
+}
+.ikki-card_img:nth-child(2) {
+  bottom: 33px;
+  right: -25px;
+}
+.ikki-ul {
+  @include m.ul-box;
+  margin-top: 60px;
+  @include m.grid-box(20px);
+}
+.ikki-ul_li {
+  @include m.flex-box-2(start, 30px);
+}
+.ikki-ul_li__text {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+}
+
+@media only screen and (min-width: 834px) {
+  .ikki-box_name {
+    font-size: 46px;
+  }
+  .ikki-box_name__span {
+    font-size: 46px;
+  }
+  .ikki-box_text {
+    font-size: 24px;
+  }
+  .ikki-card {
+    width: 564px;
+    margin: 0 auto;
+    overflow-x: visible;
+    height: 640px;
+  }
+  .ikki-card_img {
+    width: 345px;
+    height: 595px;
+  }
+  .ikki-card_img:nth-child(1) {
+    top: 95px;
+    left: -95px;
+  }
+  .ikki-card_img:nth-child(2) {
+    right: -50px;
+    bottom: 43px;
+  }
+  .ikki-ul {
+    padding-left: 100px;
+  }
+  .ikki-ul_li__img {
+    width: 45px;
+    height: 45px;
+  }
+  .ikki-ul_li__text {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .ikki-boxs {
+    @include m.flex-boxs(120px);
+    margin: 0 auto;
+  }
+  .ikki-ul {
+    padding: 0;
+    margin: 0;
+    width: 500px;
+  }
+  .ikki-card {
+    width: 455px;
+    height: 620px;
+    margin: 0;
+  }
+  .ikki-card_img {
+    width: 278px;
+    height: 540px;
+  }
+  .ikki-card_img:nth-child(1) {
+    left: -70px;
+    top: 120px;
+  }
+}

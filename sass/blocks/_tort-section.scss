@@ -1,0 +1,219 @@
+@use "./mixins" as m;
+.tort-section {
+  padding-top: 50px;
+}
+.tort-name_span {
+  color: #efa359;
+  font-weight: 400;
+  font-style: Italic;
+  font-size: 30px;
+  padding-left: 40px;
+}
+.tort-box_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+.tort-box_text:nth-child(2) {
+  display: none;
+}
+.tort-box {
+  @include m.background(url("../images/bg 3.png"));
+  padding-top: 473px;
+  padding-bottom: 17px;
+  position: relative;
+  @include m.grid-box(0px);
+  object-fit: cover;
+}
+.tort-box_img {
+  position: absolute;
+  right: 90px;
+  bottom: 190px;
+}
+.tort-box_btn {
+  border: none;
+  border: 1px solid #efa35a;
+  background-color: #fff;
+  width: 250px;
+  padding: 20px 45px;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 auto;
+  &:hover {
+    background-color: #efa35a;
+    color: #fff;
+  }
+}
+.tort-boxs {
+  display: none;
+}
+.tort-box_imgs {
+  display: none;
+}
+.tort-box_textss {
+  display: none;
+}
+@media only screen and (min-width: 834px) {
+  .tort-name_span {
+    padding-left: 0;
+    padding-left: 10px;
+  }
+  .tort-box_textss {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .tort-box_text:nth-child(2) {
+    display: none;
+  }
+  .tort-boxs {
+    display: block;
+    @include m.flex-boxs(10px);
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .kattalar {
+    @include m.grid-box(10px);
+    border: 1px solid #efa35a;
+    padding: 11px;
+    width: 160px;
+  }
+  .kattalar-text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    @include m.flex-box-2(start, 10px);
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      @include m.background(url("../images/1.svg"));
+    }
+  }
+  .texts {
+    &::before {
+      @include m.background(url("../images/2.svg"));
+    }
+  }
+  .textss {
+    &::before {
+      @include m.background(url("../images/3.svg"));
+    }
+  }
+  .textsss {
+    &::before {
+      @include m.background(url("../images/4.svg"));
+    }
+  }
+  .kattala-str {
+    font-weight: 700;
+    font-size: 14px;
+    @include m.flex-box-2(start, 10px);
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      @include m.background(url("../images/car.svg"));
+    }
+  }
+  .tort-box {
+    object-fit: contain;
+    width: 794px;
+    margin: 0 auto;
+  }
+  .tort-box_imgs {
+    display: block;
+  }
+  .tort-box_imgs:nth-child(5) {
+    position: absolute;
+    top: 0;
+    left: 182px;
+  }
+  .tort-box_imgs:nth-child(4) {
+    position: absolute;
+    top: 200px;
+    left: 190px;
+  }
+  .tort-box_imgs:nth-child(3) {
+    position: absolute;
+    top: 245px;
+    right: 350px;
+  }
+  .tort-box_imgs:nth-child(2) {
+    position: absolute;
+    right: 345px;
+    bottom: 225px;
+  }
+  .tort-box_img {
+    bottom: 95px;
+    right: 190px;
+  }
+  .tort-box_textss {
+    display: block;
+    position: absolute;
+    font-weight: 400;
+    font-size: 14px;
+    right: 30px;
+    bottom: 90px;
+    padding: 8px;
+    background-color: #fff;
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .textlar {
+    @include m.flex-box;
+  }
+  .tort-box_text:nth-child(2) {
+    display: block;
+  }
+  .tort-boxs {
+    @include m.flex-boxs(20px);
+  }
+  .tort-box {
+    width: 1240px;
+  }
+  .kattalar {
+    width: 190px;
+    height: 90px;
+  }
+  .kattalar-text {
+    font-size: 20px;
+  }
+  .kattala-str {
+    font-size: 18px;
+  }
+  .tort-box_btn {
+    font-weight: 700;
+    width: 270px;
+  }
+  .tort-box_imgs:nth-child(5) {
+    left: 350px;
+  }
+  .tort-box_imgs:nth-child(4) {
+    top: 210px;
+    left: 400px;
+  }
+  .tort-box_imgs:nth-child(3) {
+    top: 230px;
+    right: 545px;
+  }
+  .tort-box_imgs:nth-child(2) {
+    right: 545px;
+    bottom: 235px;
+  }
+  .tort-box_textss {
+    right: 120px;
+  }
+  .d-block {
+    width: 1240px;
+    height: auto;
+  }
+  .besh-card {
+    position: absolute;
+    left: 100px;
+  }
+}
